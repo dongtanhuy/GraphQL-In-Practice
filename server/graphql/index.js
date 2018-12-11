@@ -21,8 +21,8 @@ server.applyMiddleware({app});
 const httpServer = createServer(app);
 server.installSubscriptionHandlers(httpServer);
 
-httpServer.listen({ port: 3000 }, () => {
-  const url = `http://localhost:3000${server.graphqlPath}`;
+httpServer.listen({ port: 4000 }, () => {
+  const url = `http://localhost:4000${server.graphqlPath}`;
   console.log(`🚀 GraphQL server ready at ${url}`);
 });
 // app.listen(3000, () => {
